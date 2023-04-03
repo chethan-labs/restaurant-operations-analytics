@@ -1,0 +1,26 @@
+# Excel temp files
+~$*.xlsx
+~$*.xls
+*.xlk
+
+# Power BI
+*.pbix.bak
+*.pbix.tmp
+
+# Python
+__pycache__/
+*.py[cod]
+.env
+.venv/
+venv/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# VS Code
+.vscode/
+
+# Logs
+*.log
