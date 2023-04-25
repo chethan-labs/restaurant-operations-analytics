@@ -1,21 +1,23 @@
-# Restaurant Operations Analytics — GVR Limited
+# Restaurant Operations Analytics
 
-> Business analytics project covering sales, inventory, delivery, and order processing performance across 5 restaurant branches (Jan–Aug 2023). Built to identify operational inefficiencies and quantify the impact of process improvements on wastage, delivery times, and order processing speed.
+> A self-built business analytics project covering sales, inventory, delivery, and order processing performance across 5 fictional restaurant branches (Jan–Aug 2023). Built independently in Excel to practice the same type of analysis I worked on during my Business Analyst internship — where I used Power BI and Tableau for similar sales, inventory, and delivery reporting.
 
 ---
 
 ## Project Background
 
-GVR Limited operates 5 restaurant branches across London. This project analyzes 8 months of order-level data to answer the core operational questions a Business Analyst is asked to solve: where is food being wasted, why are deliveries slow, how efficient is order processing, and which channels and branches drive the most revenue.
+This project simulates 8 months of restaurant order data across 5 branches to answer the core operational questions a Business Analyst is typically asked to solve: where is food being wasted, why are deliveries slow, how efficient is order processing, and which channels and branches drive the most revenue.
 
-The dataset is split into two phases — **Pre-Optimization** (January–February 2023) and **Post-Optimization** (March–August 2023) — to measure the before/after impact of three interventions rolled out in March 2023: revised inventory control procedures, delivery route optimization, and automation of the order processing workflow.
+During my Business Analyst internship, I worked on similar problems — sales trend analysis, inventory inefficiencies, and delivery route optimization — using Power BI and Tableau for dashboarding. I built this project independently afterward to practice the same end-to-end workflow in Excel: data structuring, KPI design, and dashboard storytelling, without relying on BI software.
+
+The dataset is split into two phases — **Pre-Optimization** (January–February 2023) and **Post-Optimization** (March–August 2023) — to simulate the before/after impact of three common operational interventions: revised inventory control procedures, delivery route optimization, and automation of the order processing workflow.
 
 ---
 
 ## Repository Structure
 
 ```
-gvr-restaurant-operations-analytics/
+restaurant-operations-analytics/
 │
 ├── data/
 │   └── Restaurant_Operations_Data.csv      # Raw order-level dataset (9,181 records, 19 columns)
@@ -55,7 +57,7 @@ gvr-restaurant-operations-analytics/
 | `DayType` | Weekday or Weekend |
 | `OptimizationPhase` | Pre-Optimization (Jan–Feb) or Post-Optimization (Mar–Aug) |
 
-> **Note:** This is a synthetically generated dataset built for portfolio purposes. No real GVR Limited transaction data is included.
+> **Note:** This is a synthetically generated dataset built for personal practice and portfolio purposes. It is not affiliated with any real company or employer.
 
 ---
 
@@ -79,7 +81,7 @@ gvr-restaurant-operations-analytics/
 | Avg Order Prep Time | 22.0 min | 15.4 min | **-30%** |
 | Avg Customer Rating | 3.68 / 5 | 3.99 / 5 | +0.31 |
 
-These improvements reflect three interventions rolled out at the start of March 2023:
+These simulated improvements reflect three interventions modeled from March 2023 onward:
 
 **Inventory control strategy** — revised stock ordering and portion-control guidance for perishable Starters and Mains reduced average daily food wastage by roughly a quarter, with the largest gains concentrated in the two highest-wastage categories.
 
@@ -118,17 +120,18 @@ A 6-sheet analytics workbook — opens directly in Excel, Google Sheets, or Libr
 
 | Tool | Purpose |
 |---|---|
-| **Excel / Power BI** | Dashboard design, KPI tracking, and data visualization |
-| **Python (pandas)** | Data generation, before/after impact analysis |
-| **Tableau** (in original role) | Supplementary KPI reporting for stakeholders |
+| **Excel** | Dashboard design, KPI tracking, and data visualization for this project |
+| **Python (pandas)** | Data generation and before/after impact analysis |
+
+> During my Business Analyst internship, I worked on comparable sales, inventory, and delivery analysis using **Power BI** and **Tableau**. This project was built afterward in Excel to deepen my spreadsheet-based analytics skills using the same type of operational dataset.
 
 ---
 
 ## How to Use
 
 ```bash
-git clone https://github.com/chethan-labs/gvr-restaurant-operations-analytics.git
-cd gvr-restaurant-operations-analytics
+git clone https://github.com/chethan-labs/restaurant-operations-analytics.git
+cd restaurant-operations-analytics
 ```
 
 **Explore the data with Python:**
@@ -158,4 +161,4 @@ print(df[df['OrderChannel']=='Delivery'].groupby('DeliveryPartner')['TotalTimeMi
 
 [github.com/chethan-labs](https://github.com/chethan-labs)
 
-Business Analyst Internship, GVR Limited — January 2023 to August 2023.
+Personal project, built to practice business analytics skills used during my Business Analyst internship.
